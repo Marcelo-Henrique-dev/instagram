@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2%;
+}
+header{
+    background-color: #fff;
+}
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-header{
+    width: 30%;
+}
+.logo-header img{
+    max-width: 200px;
+    width: 100%;
+}
+.search{
+    width: 50%;
+    text-align: center;
+}
+.search-box{
+    position: relative;
+    display: inline-block;
+}
+.search-box input{
+    background-color: rgb(245, 245, 245);
+    padding: 5px 10px 5px 25px;
+    border: 1px solid rgb(200, 200, 200);
+    text-align: center;
+    width: 200px;
+}
+.search-box i{
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    color: #ccc;
+}
+.notifications-icons{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.notifications-icons i{
+    color: gray;
+    font-size: 20px;
+}
