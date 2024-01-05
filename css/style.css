@@ -56,9 +56,27 @@ header > .container{
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.notifications-icons i{
-    color: gray;
-    font-size: 20px;
+.notifications-icons a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.notifications-icons .img-min{
+    width: 25px;
+    height: 25px;
+    border-radius: calc(25px / 2);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 580px){
+    .search-box{
+        display: none;
+    }
+    .notifications-icons{
+        width: 60%;
+    }
 }
